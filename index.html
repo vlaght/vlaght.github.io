@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV | Vlad Boiko | Software Engineer</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <title>CV | Vlad Boiko | Python Backend Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body class="bg-linear-65 from-purple-400 to-pink-300 subpixel-antialiased">
@@ -14,7 +14,11 @@
         class="grid bg-blue-100 gap-1 text-center mb-1 m-2 font-mono font-semibold rounded-tl-lg rounded-tr-lg"
       >
         <div class="mt-1 mb-1">
-          <h1>Software Developer | Pythonist</h1>
+          <h1 class="text-xl font-bold text-gray-800">Vlad Boiko</h1>
+          <p>Python Backend Engineer | ML</p>
+          <p class="text-sm font-normal">
+            Post-Study Work Visa: open work rights (3 years)
+          </p>
           <button
             onclick="window.print()"
             class="animate-pulse cursor-pointer no-print text-pink-400 font-mono"
@@ -30,13 +34,10 @@
         <div class="bg-blue-100 p-4 mt-2 m-2 flex-1" id="leftCol">
           <div class="text-center mb-4" id="photo">
             <img
-              src="/assets/photo.jpg"
+              src="assets/photo.jpg"
               alt="Profile Photo"
               class="rounded-full mx-auto w-36 h-36 border-5 border-double border-indigo-400 shadow-md"
             />
-          </div>
-          <div class="text-center mb-4" id="name">
-            <h3 class="text-xl font-bold text-gray-800">Vlad Boiko</h3>
           </div>
           <div class="mb-4" id="location">
             <h4 class="font-semibold text-gray-800">Location</h4>
@@ -61,7 +62,7 @@
                 <a
                   href="tel:+64212427226"
                   class="text-blue-500 hover:underline text-nowrap"
-                  >+64 212427226</a
+                  >+64 21 242 7226</a
                 >
               </p>
             </div>
@@ -76,128 +77,267 @@
                 >
               </p>
             </div>
+            <div class="text-sm">
+              <p class="font-mono">
+                GitHub:
+                <a
+                  href="https://github.com/vlaght"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >/vlaght</a
+                >
+              </p>
+            </div>
           </div>
           <div class="mb-4" id="skills">
             <h4 class="font-semibold text-gray-800">Skills</h4>
-            <ul class="list-disc list-inside font-mono text-sm">
-              <li>Python</li>
-              <li>Git</li>
-              <li>GitLab CI</li>
-              <li>Docker</li>
-              <li>API & it&#39;s testing</li>
-              <li>pytest</li>
-              <li>SQL & NOSQL</li>
-              <li>Flask, FastAPI</li>
-              <li>Qdrant</li>
-              <li>Elasticsearch</li>
-              <li>locust</li>
-            </ul>
-          </div>
-          <div class="mb-4" id="education">
-            <h2 class="font-semibold text-gray-800">Education</h2>
-            <hr class="text-blue-300" />
-            <div class="mt-2 mb-2">
-              <h3 class="font-semibold">IT, master</h3>
-              <p class="text-sm text-gray-600">Auckland Institute of Studies</p>
-              <p class="text-sm text-gray-600">Feb 2025 - Aug 2026</p>
-              <p>Thesis in forensics: AI for deepfake detection</p>
-            </div>
-            <div class="mt-2 mb-2">
-              <h3 class="font-semibold">
-                Information security, bachelor + master
-              </h3>
-              <p class="text-sm text-gray-600">
-                MIREA (Russian Technological University)
+            <div class="font-mono text-sm">
+              <p class="mt-1">
+                <b>Languages:</b> Python (asyncio), SQL, TypeScript
               </p>
-              <p class="text-sm text-gray-600">Sep 2013 - Mar 2019</p>
-              <p>It was all about math, computer science and cybersecurity</p>
+              <p class="mt-1">
+                <b>Web:</b> FastAPI, Flask, SQLAlchemy, Celery, REST, WebSockets,
+                React
+              </p>
+              <p class="mt-1">
+                <b>Data:</b> PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch,
+                Qdrant
+              </p>
+              <p class="mt-1">
+                <b>DevOps:</b> Docker, Kubernetes, GitLab CI/CD, nginx, Linux
+              </p>
+              <p class="mt-1">
+                <b>Quality &amp; monitoring:</b> pytest, locust, Sentry, StatsD,
+                Prometheus, Kibana
+              </p>
+              <p class="mt-1">
+                <b>ML:</b> PyTorch, scikit-learn, pandas, OpenCV, MediaPipe,
+                librosa, LLM APIs
+              </p>
             </div>
           </div>
           <div class="mb-4" id="languages">
             <h4 class="font-semibold text-gray-800">Languages</h4>
             <ul class="list-disc list-inside font-mono text-sm">
-              <li>English</li>
-              <li>Russian</li>
+              <li>English (IELTS 7.5)</li>
+              <li>Russian (native)</li>
             </ul>
           </div>
+          <div class="mb-4" id="references">
+            <p class="text-sm text-gray-600">References available on request</p>
+          </div>
         </div>
-        <div class="bg-blue-50 p-4 mt-2 m-2 flex-3 text-justify" id="rightCol">
-          <div class="mb-4" id="about">
-            <h2 class="font-semibold text-gray-800">About me</h2>
+        <div class="bg-blue-50 p-4 mt-2 m-2 flex-3 md:text-justify" id="rightCol">
+          <div class="mb-4" id="summary">
+            <h2 class="font-semibold text-gray-800">Summary</h2>
             <hr class="text-blue-300" />
             <p class="mt-2 mb-2">
-              Supporting legacy projects, developing new ones, and garnishing
-              them with monitoring, unit tests, and stress tests.
-              Troubleshooting bugs like a detective, improving things like
-              it&#39;s never enough.
+              Python backend engineer with ~7 years of experience: APIs and data
+              pipelines over billions of records, vector search, monolith
+              decomposition and Kubernetes, all covered by monitoring and load
+              tests. Master of IT (Auckland) with a thesis on audio-visual
+              deepfake detection (AUC 0.998); NZ experience is present: built an
+              AI-powered document processing web-application.
             </p>
           </div>
           <div class="mb-4" id="employmentHistory">
-            <h2 class="font-semibold text-gray-800">Employment history</h2>
+            <h2 class="font-semibold text-gray-800">Experience</h2>
             <hr class="text-blue-300" />
+            <div class="mt-2 mb-2">
+              <h3 class="font-semibold">Software Engineer Intern</h3>
+              <p class="text-sm text-gray-600">
+                Lynx Recruitment &amp; PinkAdmin | 2025
+              </p>
+              <ul class="list-disc list-outside ml-5">
+                <li>
+                  Built a web app for recruitment agencies that converts
+                  candidate CVs into branded documents from templates, using AI
+                  to parse CVs, extract structured data and write summaries.
+                </li>
+                <li>
+                  <b>FastAPI</b> + <b>PostgreSQL</b> backend with
+                  <b>Celery</b>/<b>Redis</b> conversion jobs and WebSocket
+                  notifications; <b>React</b> + <b>TypeScript</b> frontend.
+                </li>
+                <li>
+                  Multi-user with role-based access; template editor with
+                  validation, test generation and preview.
+                </li>
+              </ul>
+            </div>
             <div class="mt-2 mb-2">
               <h3 class="font-semibold">Software Engineer</h3>
               <p class="text-sm text-gray-600">
                 HypeAuditor | Jul 2022 - Dec 2024
               </p>
-              <p>
-                Python developer in the Market Analysis team (at first) and then
-                switched to Data Team. So I was implementing influence marketing
-                reports, data analysis, support of the existing code, wrote
-                whole new features for clients, and enhanced team inner
-                processes - and all of it on a new level of consciousness due to
-                big data volumes. Here I&#39;ve interacted a lot with
-                <b>asyncio</b>, <b>MongoDB</b>, <b>Elastic</b>, <b>Kibana</b>,
-                <b>StatsD</b>, and <b>Sentry</b>. I&#39;ve done many things here
-                - moved projects to <b>k8s</b>, developed new minor and major
-                features, analyzed performance and so on
-              </p>
+              <ul class="list-disc list-outside ml-5">
+                <li>
+                  Co-built vector search, a core product feature still in
+                  production: integrated the data science model into the
+                  production API, designed the <b>Qdrant</b> data model and
+                  inter-service communication.
+                </li>
+                <li>
+                  Extracted several services from the monolith and moved them to
+                  <b>Kubernetes</b>; introduced load testing (<b>locust</b>);
+                  cut deployment resources by ~30-50%.
+                </li>
+                <li>
+                  Optimised <b>Elasticsearch</b> collections and queries over
+                  billions of records, making client-facing search ~20% faster.
+                </li>
+                <li>
+                  Added observability to all new services: web metrics in
+                  <b>StatsD</b> and <b>Prometheus</b>, errors in <b>Sentry</b>.
+                </li>
+                <li>
+                  Improved team practices: code review standards, CI/CD,
+                  alerting, documentation and onboarding.
+                </li>
+              </ul>
             </div>
             <div class="mt-2 mb-2">
               <h3 class="font-semibold">Backend Engineer</h3>
               <p class="text-sm text-gray-600">
-                RnD center Atlas | Feb 2018 - Apr 2022
+                RnD center Atlas | Feb 2018 - Apr 2022 | junior to mid-level
               </p>
-              <p>
-                Creating web-applications with Python 3 using various
-                technologies, supporting old projects on Python 2, automated
-                reports and pretty docs generation, migrations and all that
-                backend stuff. I prefer using Docker and Git (only fast-forward
-                merges in master <3) in my development process. I follow the
-                PEP8 code style guide. Experienced in the development with
-                flask-like applications (based on Werkzeug handlers, Webob
-                responses & requests, using SQLAlchemy as ORM, MySQL and
-                PostgreSQL as DB), collecting and parsing data (requests,
-                BeautifulSoup). On top of that, I have a clear view of what is
-                supposed to go on at the front-side of a web-application. By the
-                way, I&#39;m little familiar with React, javascript, webpack and
-                yarn. In addition, list of some tags related to my work
-                experience:
-              </p>
-              <ul class="list-disc list-inside font-mono text-sm">
-                <li>Search: Sphinxsearch</li>
-                <li>Cache: redis, memcached</li>
-                <li>nginx, uWSGI, gunicorn and so on</li>
-                <li>Linux-like (MacOS satisfies me, yep)</li>
-                <li>Integration with third-side APIs</li>
+              <ul class="list-disc list-outside ml-5">
                 <li>
-                  Applications with ReST arch. (Related tags: openapi3, swagger,
-                  ReDoc)
+                  Built backends for high-traffic public-sector web portals,
+                  including a content publishing system.
                 </li>
-                <li>unittest, pytest</li>
-                <li>pre-commit, flake8, conventional commits</li>
-                <li>GitLab (and its&#39; CI/CD)</li>
+                <li>
+                  Designed, launched and maintained three services from scratch
+                  (Python, <b>SQLAlchemy</b>, <b>PostgreSQL</b>, MySQL,
+                  <b>Redis</b>).
+                </li>
+                <li>
+                  Delivered a large-scale data migration from an undocumented
+                  legacy system, reverse-engineering it into a new platform
+                  built by our team.
+                </li>
+                <li>
+                  Implemented full-text site search; optimised
+                  <b>GitLab CI/CD</b> pipelines.
+                </li>
               </ul>
             </div>
             <div class="mt-2 mb-2">
-              <h3 class="font-semibold">Intern</h3>
+              <h3 class="font-semibold">Intern, IT Risk Assurance</h3>
               <p class="text-sm text-gray-600">EY | Aug 2017 - Feb 2018</p>
               <p>
-                I was working at IT Risk Assurance team. I was working with IT
-                General controls, compliance, automation and analysis,
-                penetration tests, IT Security policy (creation and integration)
-                and cybersecurity. To crown it all up, I have been doing a lot
-                of various office work.
+                IT general controls, compliance, penetration testing and IT
+                security policy development.
+              </p>
+            </div>
+          </div>
+          <div class="mb-4" id="projects">
+            <h2 class="font-semibold text-gray-800">Projects</h2>
+            <hr class="text-blue-300" />
+            <div class="mt-2 mb-2">
+              <h3 class="font-semibold">
+                Phoneme-Based Audio-Visual Deepfake Detection
+              </h3>
+              <p class="text-sm text-gray-600">
+                Master's thesis | 2026 |
+                <a
+                  href="https://huggingface.co/vl4gh7/dslp-ensemble"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >model</a
+                >
+                |
+                <a
+                  href="https://github.com/vlaght/dslp-ensemble-study"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >code</a
+                >
+                |
+                <a
+                  href="https://huggingface.co/spaces/vl4gh7/dslp-ensemble-demo"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >demo</a
+                >
+              </p>
+              <ul class="list-disc list-outside ml-5">
+                <li>
+                  Built a per-frame feature pipeline (MediaPipe blendshapes,
+                  mouth geometry, MFCC audio) with phoneme forced alignment over
+                  41,727 videos.
+                </li>
+                <li>
+                  Designed DSLP, a Dual-Stream LSTM with phoneme embeddings, and
+                  a three-model ensemble in <b>PyTorch</b>: AUC
+                  <b>0.9984</b> on DeepSpeak v2, <b>0.9925</b> on the extended
+                  dataset (10-fold CV).
+                </li>
+              </ul>
+            </div>
+            <div class="mt-2 mb-2">
+              <h3 class="font-semibold">Home Server Telegram Bot</h3>
+              <p class="text-sm text-gray-600">
+                Personal project | 2022 - 2023 |
+                <a
+                  href="https://github.com/vlaght/hms_bot"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >code</a
+                >
+              </p>
+              <ul class="list-disc list-outside ml-5">
+                <li>
+                  Telegram bot (<b>python-telegram-bot</b>) for a self-hosted
+                  home server: queues downloads in qBittorrent from
+                  files, magnet and direct links, reports progress, and
+                  searches a tracker with inline-keyboard picks.
+                </li>
+                <li>
+                  Uploads documents to self-hosted Seafile via its REST
+                  API; checks JPEGs for steganography; access restricted to a
+                  user whitelist.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-2 mb-2">
+              <h3 class="font-semibold">Noise Protocol with GOST Cryptography</h3>
+              <p class="text-sm text-gray-600">
+                Personal project | 2018 |
+                <a
+                  href="https://github.com/vlaght/noisegost"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >code</a
+                >
+              </p>
+              <ul class="list-disc list-outside ml-5">
+                <li>
+                  Extended a <b>Go</b> Noise Protocol Framework library with GOST
+                  cipher suites: Kuznyechik (GOST R 34.12-2015) in GCM mode and
+                  Streebog-256/512 hashes (GOST R 34.11-2012), with tests.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-4" id="education">
+            <h2 class="font-semibold text-gray-800">Education</h2>
+            <hr class="text-blue-300" />
+            <div class="mt-2 mb-2">
+              <h3 class="font-semibold">
+                Master of IT (machine learning, data mining)
+              </h3>
+              <p class="text-sm text-gray-600">
+                Auckland Institute of Studies | Feb 2025 - Aug 2026
+              </p>
+            </div>
+            <div class="mt-2 mb-2">
+              <h3 class="font-semibold">
+                Specialist degree in Information Security (5.5 yrs,
+                Master's-equivalent)
+              </h3>
+              <p class="text-sm text-gray-600">
+                MIREA (Russian Technological University) | Sep 2013 - Mar 2019
               </p>
             </div>
           </div>

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+  @page {
+    size: 210mm 297mm;
+    margin-left: 10mm;
+    margin-right: 10mm;
+    margin-top: 10mm;
+    margin-bottom: 10mm;
+  }
+  #row {
+    flex-direction: row !important;
+    gap: 0.25rem !important;
+  }
+  body {
+    font-size: 0.82em;
+  }
+  #photo img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  #leftCol,
+  #rightCol {
+    padding: 0.5rem !important;
+    margin: 0.25rem !important;
+  }
+  #header {
+    margin: 0.125rem !important;
+  }
+  #projects {
+    break-before: page;
+    padding-top: 0.5rem;
+  }
+  #leftCol .mb-4,
+  #rightCol .mb-4 {
+    margin-bottom: 0.35rem !important;
+  }
+  #leftCol .mt-2,
+  #rightCol .mt-2,
+  #leftCol .mb-2,
+  #rightCol .mb-2 {
+    margin-top: 0.15rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+}
